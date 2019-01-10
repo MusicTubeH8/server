@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/lyrics', lyricsRouter);
-app.use('/topchart', topchartRouter);
 app.use('/youtube', youtubeRouter);
+app.use('/topcharts', topchartRouter);
 
 module.exports = app;
