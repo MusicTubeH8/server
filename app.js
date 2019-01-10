@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var lyricsRouter = require('./routes/lyrics');
 var topchartRouter = require('./routes/topchart');
+var youtubeRouter = require('./routes/youtube');
 
 var app = express();
 
@@ -23,5 +24,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/lyrics', lyricsRouter);
 app.use('/topchart', topchartRouter);
+app.use('/youtube', youtubeRouter);
 
 module.exports = app;
