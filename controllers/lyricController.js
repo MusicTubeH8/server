@@ -10,7 +10,9 @@ module.exports = {
           res.status(200).json(data)
         })
         .catch((err) => {
-          res.status(400).json({err: err.message})
+          res.status(400).json({
+              err: err.message
+            })
         })
     } 
 }
